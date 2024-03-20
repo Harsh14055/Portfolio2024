@@ -1,0 +1,996 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-image: linear-gradient(to top, rgb(47, 44, 44), lightgrey, rgb(47, 44, 44));
+    width: 15vw;
+    height: 100vh;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.main {
+    /*background-color: violet;*/
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+
+}
+
+.sidebar {
+    /*font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;*/
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* width: 434px; */
+    /* position: fixed; */
+    /* overflow: auto; */
+    height: 100vh;
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    position: fixed;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    /* background-image: linear-gradient(to right, blue, red); */
+    background-image: linear-gradient(to right, black, white, grey);
+
+}
+
+.infocontainer {
+    /* background-image: linear-gradient(to bottom,white,green,yellow,black); */
+    background-image: linear-gradient(to right, black, grey, black);
+    border: 10px solid rgb(255, 255, 255);
+    height: 58vh;
+    width: 80vw;
+    margin: 120px auto;
+    display: flex;
+    justify-content: space-around;
+    border-style: groove;
+    box-shadow:  0px 10px 10px black;
+    animation-name: aboutt;
+    animation-duration: 4s;
+}
+
+@keyframes info {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hello {
+    font-size: 40px;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    /*font-weight: <weight>;*/
+    word-spacing: 20px;
+
+}
+
+.name {
+    font-size: 80px;
+    font-family: "Allura", cursive;
+    font-weight: 400;
+    font-style: normal;
+    animation-name: namee;
+    animation-duration: 4s;
+    letter-spacing: 20px;
+
+}
+
+@keyframes namee {
+    0% {
+        display: none;
+    }
+
+    25% {
+        color: red;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: black;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+.name:hover {
+    color: orange;
+}
+
+.form-control {
+    background: transparent;
+    color: white;
+}
+
+.about {
+    font-size: 25px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    /*font-weight: <weight>;*/
+    font-style: normal;
+}
+
+.butto {
+    margin-top: 34px;
+}
+
+.butto button {
+    padding: 9px 14px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(77, 76, 76);
+    font-weight: bold;
+    font-size: 10px;
+    margin: 0 3 px;
+    cursor: pointer;
+
+}
+
+.butto button:hover {
+    color: white;
+    background-color: black;
+}
+
+.devinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.devpic img {
+    width: 300px;
+    height: 45vh;
+    padding-top: 50px;
+}
+
+.moreabout {
+    font-size: 22px;
+    font-family: cursive;
+    margin-top: 23px;
+}
+
+@keyframes aboutt {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    75% {
+        opacity: 0.6;
+    }
+
+    90% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.contactform {
+    margin-top: 0px;
+    padding: 0 0px;
+    padding-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-family: cursive;
+    background-image: url(cont.avif);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    opacity: 1;
+    color: white;
+    background-color: transparent;
+    border-radius: 0px;
+    border-radius: 20px;
+}
+
+.contactform h1 {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /*text-align: center;*/
+    padding: 12px 0;
+    margin-left: 50px;
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.contactform form div input {
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+#emailHelp {
+    font-size: 10px;
+    color: white;
+    margin: 0 5px;
+}
+
+.educontainer {
+    padding: 0 34px;
+    padding-top: 50px;
+    overflow-x: auto;
+
+}
+
+.edutable {
+    margin-left: 200px;
+
+}
+
+table,
+th,
+td {
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 1000px;
+    height: 100px;
+    font-size: 20px;
+}
+
+tr:nth-child(4) {
+    background-color: grey;
+}
+
+tr:nth-child(2) {
+    background-color: lightgrey;
+}
+
+tr:nth-child(3) {
+    background-color: lightgrey;
+}
+
+th {
+    background-color: darkgray;
+}
+
+tr:hover {
+    background-color: lightblue;
+}
+
+#amr:hover {
+    background-color: salmon;
+    cursor: pointer;
+}
+
+.thead {
+    font-family: "PT Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.thead th {
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.servcon {
+    /* height: 58vh;
+    width: 80vw; */
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, black, grey, black);
+}
+.servitem {
+    margin: 20px;
+    font-family: sans-serif;
+    background-image: linear-gradient(to top, white, grey);
+    height: 350px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: width 2s, height 2s;
+    border-radius: 25px;
+}
+.servitem p {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.howmuch {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-image: linear-gradient(to right, white, black, white);
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+}
+
+.servitem h3 {
+    font-family: "Monoton", sans-serif;
+    font-weight: 550;
+    font-style: bold;
+    font-size: 25px;
+}
+
+.servitem div:hover {
+    cursor: pointer;
+    width: 550px;
+    height: 400px
+}
+
+.servitem h2 {
+    margin: 23px;
+    text-align: center;
+}
+
+.servitem p {
+    margin-left: 20px;
+}
+
+.head2 {
+    width: 1200px;
+
+    height: 80px;
+    font-family: "Russo One", sans-serif;
+    font-weight: 40;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    margin: 15px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.head2 img {
+    height: 40px;
+    margin-left: 100px;
+}
+
+.servitem img {
+    height: 40%;
+    width: 40%;
+    padding-left: 50px;
+    margin-top: 10px;
+}
+
+#chessimg {
+    height: 100px;
+    width: 100px;
+    padding: 0;
+    border-radius: 100px;
+    margin: 40px;
+}
+
+#hcjlogo {
+    margin-left: 5px;
+    width: 150px;
+    border-radius: 100px;
+    padding: 0;
+    margin-top: 0;
+}
+
+#javalogo {
+    height: 130px;
+    width: 100px;
+}
+
+.html {
+    background-color: aqua;
+    height: 4px;
+    width: 100px
+}
+
+greypercents {
+    background-image: linear-gradient(to right, white, grey);
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+
+.skillpercents h5 {
+    display: inline;
+
+}
+
+.html {
+    height: 4px;
+    width: 500px;
+    background-color: grey;
+    animation-name: html;
+    animation-duration: 4s;
+}
+
+.css {
+    height: 4px;
+    width: 400px;
+    background-color: grey;
+    animation-name: css;
+    animation-duration: 4s;
+}
+
+.js {
+    height: 4px;
+    width: 5px;
+    background-color: grey;
+    animation-name: js;
+    animation-duration: 4s;
+}
+
+.py {
+    height: 4px;
+    width: 500px;
+    background-color: grey;
+    animation-name: py;
+    animation-duration: 4s;
+}
+
+.java {
+    height: 4px;
+    width: 300px;
+    background-color: grey;
+    animation-name: java;
+    animation-duration: 4s;
+}
+
+@keyframes java {
+    0% {
+        width: 0px;
+    }
+
+    25% {
+        width: 100px;
+    }
+
+    50% {
+        width: 150px
+    }
+
+    100% {
+        width: 300px;
+    }
+}
+
+@keyframes py {
+    0% {
+        width: 0px;
+    }
+
+    25% {
+        width: 100px;
+    }
+
+    50% {
+        width: 150px
+    }
+
+    100% {
+        width: 500px;
+    }
+}
+
+@keyframes js {
+    0% {
+        width: 0px;
+    }
+
+    25% {
+        width: 100px;
+    }
+
+    50% {
+        width: 150px
+    }
+
+    100% {
+        width: 5px;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0px;
+    }
+
+    25% {
+        width: 100px;
+    }
+
+    50% {
+        width: 150px
+    }
+
+    100% {
+        width: 400px;
+    }
+}
+
+@keyframes html {
+    0% {
+        width: 0px;
+    }
+
+    25% {
+        width: 100px;
+    }
+
+    50% {
+        width: 150px
+    }
+
+    100% {
+        width: 500px;
+    }
+}
+
+.default {
+    width: 1000px;
+    border: 2px solid black
+}
+
+/* @media (max-width:1610px){
+    .sidebar{
+        transform: translate(-443px,0px);
+        position: absolute;
+    }
+} */
+@media (min-width:1650px) {
+    .devpic {
+        display: none;
+    }
+
+    .intro {
+        margin: 8px;
+    }
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+
+}
+.hamburger :hover{
+    background-color: rgb(69, 112, 112);
+    border-color: blue;
+}
+
+.ham {
+    border: 2px solid white;
+    background-color: white;
+    position: fixed;
+}
+
+.cross {
+    margin-left: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    position: fixed;
+}
+
+.sidebargo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.educontainer h2 {
+    margin-left: 100px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    text-align: center;
+}
+
+.contactlogo {
+    background-color: white;
+    border-right: 10px solid red;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 8px;
+}
+
+.edulogo {
+    height: 80px;
+    width: 80px;
+    border: 2px solid white;
+    margin-right: 40px;
+    border-radius: 40px;
+    background-image: linear-gradient(to top, white, grey);
+}
+
+.contactlogos {
+    background-image: linear-gradient(to bottom, black, grey, grey, black);
+    height: 58vh;
+    margin-left: 10px;
+    border-right: 1px solid black;
+}
+
+.contactlogos img {
+    height: 40px;
+    width: 40px;
+    display: block;
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    align-items: center;
+    transition: height 0.1s, width 0.1s;
+}
+
+.contactlogos img:hover {
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    transition-timing-function: ease-in-out;
+}
+
+.whatsapp {
+    position: relative;
+    display: inline-block;
+}
+
+.whatsapp-number {
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(to right, lightgrey, white);
+    font-style: italic;
+    font-weight: bold;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.whatsapp:hover .whatsapp-number {
+    display: block;
+    height: 25px;
+    width: 75px;
+}
+
+.educontainer svg {
+    text-align: center;
+}
+
+@media (max-width:600px) {
+    .devpic {
+        display: none;
+    }
+
+    .infocontainer {
+        background-color: lightblue;
+    }
+
+    .devinfo {
+        font-size: 50px;
+    }
+
+    .hello {
+        display: none;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .about {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .moreabout {
+        display: none;
+    }
+
+    .butto button {
+        width: 250px;
+    }
+
+    .educontainer {
+        display: none;
+    }
+
+    .contactform {
+        display: none;
+    }
+
+    .contactlogos img {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+.sidebar li :hover {
+    color: white;
+    font-size: 32px;
+    /* background-image: linear-gradient(to right,black,white,black); */
+}
+
+.cgpa {
+    height: 30px;
+    width: 70px;
+    background-color: white;
+    text-align: center;
+    align-content: center;
+    font-size: 25px;
+    border-radius: 35px;
+    display: inline-block;
+    color: white;
+    background-image: conic-gradient(grey, black);
+}
+
+.mainabout {
+    display: flex;
+}
+
+.aboutme {
+    height: 600px;
+    width: 50vw;
+    margin-left: 100px;
+    margin-top: 45px;
+    /* background-color: yellow; */
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    border: 2px solid black;
+    background-image: linear-gradient(to bottom, grey, white);
+    animation-name: aboutt;
+    animation-duration: 4s;
+}
+
+.aboutme p {
+    margin-left: 20px;
+    border-left: 2px solid black;
+    /* background-image: linear-gradient(to right, red, yellow); */
+}
+
+.aboutme h2 {
+    font-size: 115px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 2px dotted black;
+    /* background-image:linear-gradient(to bottom,yellow,red,yellow); */
+    /* border-radius: 20px; */
+}
+
+.aboutpic {
+    /* background-image: url(about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    border: 2px groove black;
+    height: 250px;
+    width: 45vw;
+    margin-top: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 25px;
+    animation-name: aboutt;
+    animation-duration: 8s;
+}
+
+.aboutpic p {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.interest {
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+    background-color: black;
+    height: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.moredets {
+    display: flex;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: rgb(182, 178, 178);
+    height: 250px;
+    width: 45vw;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: row;
+    animation-name: aboutt;
+    animation-duration: 12s;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.moredets h4 {
+
+    font-size: 25px;
+}
+
+.ach {
+    height: 100px;
+    width: 20vw;
+    background-image: linear-gradient(to right, grey, white);
+    margin: 10px;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+
+}
+
+.achi {
+    margin-left: 20px;
+    font-size: 25px;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 45vw;
+    color: white;
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    animation-name: aboutt;
+    animation-duration: 12s;
+}
+
+.aboutme p {
+    margin-top: 20px;
+}
+
+.welcome {
+    padding-top: 10px;
+    height: 50px;
+    width: 400px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: auto;
+    /* background-color: rgb(0, 0, 0); */
+    background-image: linear-gradient(to right, black, grey, black);
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: "Zeyada", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 20px;
+    animation-name: aboutt;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-name: text;
+    animation-duration: 2s;
+    animation-name: welcbox;
+}
+@keyframes welcbox{
+    0%{height: 0px;}
+    25%{height: 10px;}
+    50%{height: 20px;}
+    75%{height: 35px;}
+    100%{height: 50px;}
+}
+.welcome :hover {
+    cursor: pointer;
+    font-size: 40px;
+}
+
+@keyframes text {
+    0% {
+        font-size: 0px;
+    }
+
+    25% {
+        font-size: 10px;
+    }
+
+    50% {
+        font-size: 20px;
+    }
+
+    75% {
+        font-size: 30px;
+    }
+
+    100% {
+        font-size: 40px;
+    }
+}
+.video{
+    display: flex;
+    justify-content: center;
+}
+.video video{
+    height: 400px;
+    width: 500px;
+}

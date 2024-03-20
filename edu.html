@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyEdu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barriecito&family=Caveat:wght@400..700&family=DotGothic16&family=Honk&family=Orbitron:wght@400..900&family=Protest+Revolution&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Honk&family=Protest+Revolution&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barriecito&family=Honk&family=Orbitron:wght@400..900&family=Protest+Revolution&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barriecito&family=Caveat:wght@400..700&family=Honk&family=Orbitron:wght@400..900&family=Protest+Revolution&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="H.jpg">
+</head>
+<style>
+    /*body{
+        background-image: linear-gradient(to right,blue,red);
+    }*/
+    h3 {
+        margin-bottom: 10px;
+        display: inline-block;
+        font-family: "Black Ops One", system-ui;
+        font-weight: 200;
+        font-style: normal;
+        /*color: white;*/
+        font-size: 40px;
+        color: white;
+    }
+    svg:hover{
+        cursor: pointer;
+        
+    }
+    
+</style>
+
+<body>
+    
+    <div class="container">
+        
+        <div class="sidebar sidebargo">
+            <nav>
+                <ul>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="intro.html" target="_blank" > MYIntro</a></li>
+                    <li><a href="service.html" target="_blank" > Skills</a></li>
+                    <li><a href="edu.html" target="_blank" > Education</a></li>
+                    <li><a href="contact.html" target="_blank" >Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="ham" src="ham.png" alt="">
+                <img class="cross" src="cross.png" alt="">
+            </div>
+            <div class="educontainer">
+                <h2><img src="edulogo.png" alt="" class="edulogo">My education background</h2>
+                <div class="edutable">
+                    <table>
+                        <tr class="thead">
+                            <th>Year</th>
+                            <th>Degree</th>
+                            <th>Institute</th>
+                            <th>Percentage</th>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>class 12</td>
+                            <td>Gowtham junior College</td>
+                            <td>96.4%</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>class 10</td>
+                            <td><a href="https://www.stpeterspublicschool.com/" target="_blank" >St.Peter's High School</a></td>
+                            <td>95.8%</td>
+                        </tr>
+
+                        <tr>
+                            <td id="amr" colspan="4"><a href="//www.amrita.edu/campus/chennai/"
+                                    target="_blank">currently pursuing B.tech at Amrita Vishwa Vidhyapeetham</a></td>
+                        </tr>
+                    </table>
+
+                    <!-- <h3>Present CGPA : </h3> -->
+                    <!-- <div class="cgpa">
+                        8.7
+                    </div> -->
+                    <center>
+                    <svg height="130" width="500" class="gpa">
+                        <defs>
+                            <linearGradient id="grad1">
+                                <stop offset="0%" stop-color="grey" />
+                                <stop offset="100%" stop-color="black" />
+                            </linearGradient>
+                        </defs>
+                        <ellipse cx="150" cy="80" rx="150" ry="40" fill="url(#grad1)" />
+                        <text fill="#ffffff" font-size="25" font-family="Verdana" x="50" y="86">Present cgpa - 8.7</text>
+                        Sorry, your browser does not support inline SVG.
+                    </svg>
+                    </center>
+
+                    <!-- <svg width="100" height="100">
+                    
+                    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                    
+                  </svg> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scr.js"></script>
+</body>
+
+</html>
